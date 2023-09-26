@@ -1,0 +1,48 @@
+.calculator
+{
+    width: 30%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.leaf
+{
+    width: 30%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.car
+{
+    width: 30%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+h1
+{
+    text-align: center;
+}
+header
+{
+    background-color: rgb(179, 179, 53);
+    width: 80%;
+    margin-left: 200px;
+}
+footer
+{
+    text-align: center;
+    margin-top: 100px;
+}
+hr
+{
+    width: 400px;
+}
+hr.line
+{
+    width: 300px;
+}
+hr.line2
+{
+    width: 200px;
+}

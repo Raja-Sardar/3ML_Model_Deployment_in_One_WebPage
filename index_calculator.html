@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_calculator.css') }}">
+    </head>
+        <body>
+            <h1>ARITHMATIC CALCULATOR</h1>
+            <a href="http://127.0.0.1:5000/"><p><b>Refresh</b></p></a><hr>
+            <form action="/calci" method="POST">
+                <input type="text" name="A" placeholder="Value of A" required="required"><br><br>
+                <input type="text" name="B" placeholder="Value of B" required="required"><br><br>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+            </form>
+            <br>
+            <h3>{{result}}<h3>
+        </body>
+</html>

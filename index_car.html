@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_car.css') }}">
+    </head>
+        <body>
+            <h1>Predict Your Car Price</h1>
+            <a href="http://127.0.0.1:5000/"><h2>Refresh</h2></a><hr>
+            
+            <hr>
+            <form action="/price" method="post">
+                <input type="text" name="Present_Price" placeholder="Present_Price" required="Required"><br><br>
+                <input type="text" name="Kms_Driven" placeholder="Kms_Driven" required="Required"><br><br>
+                <input type="text" name="Owner" placeholder="Owner" required="Required"><br><br>
+                <input type="text" name="No_of_Year" placeholder="No_of_Year" required="Required"><br><br>
+                <input type="text" name="Fuel_Type_Diesel" placeholder="Fuel_Type_Diesel" required="Required"><br><br>
+                <input type="text" name="Fuel_Type_Petrol" placeholder="Fuel_Type_Petrol" required="Required"><br><br>
+                <input type="text" name="Seller_Type_Individual" placeholder="Seller_Type_Individual" required="Required"><br><br>
+                <input type="text" name="Transmission_Manual" placeholder="Transmission_Manual" required="Required"><br><br>
+                <button type="submit" class="btn btn-primary btn-block btn-large"><b>Let's Predict</b></button><br>
+            </form>
+            <br>
+            <br>
+            <h1>{{answer}}</h1>
+        </body>
+</html>

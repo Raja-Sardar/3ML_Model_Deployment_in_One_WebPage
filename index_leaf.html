@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Leaf Name Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_leaf.css') }}">
+    </head>
+
+    <body>
+        <div class="login">
+            <h1>Leaf Name Prediction</h1>
+            <a href="http://127.0.0.1:5000/"><h2>Refresh</h2></a><hr>
+
+            <form action="/predict" method="post">
+                <input type="text" name="Sepal_Length" placeholder="Sepal Length" required="required" /><br><br><br><br>
+                <input type="text" name="Sepal_Width" placeholder="Sepal Width" required="required" /><br><br><br><br>
+                <input type="text" name="Petal_Length" placeholder="Petal Length" required="required" /><br><br><br><br>
+                <input type="text" name="Petal_Width" placeholder="Petal Width" required="required" /><br><br><br><br>
+                <br><br>
+                <button type="submit" class="btn btn-primary btn-block btn-large"><b>Predict Leaf Name</b></button>
+            </form>
+            <br>
+            <br>
+            <h1>{{ prediction_text }}</h1>
+        </div>
+
+    </body>
+</html>
